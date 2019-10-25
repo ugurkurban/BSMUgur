@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="u&#287;ur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-16 04:22:13 "/>
+        <attribute name="created" value="dcSfdXI7S1VSQkFOOzIwMTktMTAtMTY7IjAzOjQ3OjU3ICI7MjI4Nw=="/>
+        <attribute name="edited" value="dcSfdXI7S1VSQkFOOzIwMTktMTAtMTY7IjA0OjIyOjEzICI7MTsyMzgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, karelerToplam&#305;, binler, y&#252;zler, onlar, birler, uzunluk, saya&#231;" type="Integer" array="False" size=""/>
+            <assign variable="uzunluk" expression="0"/>
+            <assign variable="say&#305;" expression="0"/>
+            <assign variable="saya&#231;" expression="0"/>
+            <output expression="&quot;say&#305; giriniz&quot;" newline="True"/>
+            <do expression="uzunluk!=4&amp;&amp;saya&#231;&lt;3">
+                <input variable="say&#305;"/>
+                <assign variable="uzunluk" expression="len(ToString(say&#305;))"/>
+                <if expression="uzunluk==4&amp;&amp;say&#305;&gt;0">
+                    <then>
+                        <assign variable="binler" expression="say&#305;/1000"/>
+                        <assign variable="y&#252;zler" expression="(say&#305;/100)%10"/>
+                        <assign variable="onlar" expression="(say&#305;/10)%10"/>
+                        <assign variable="birler" expression="say&#305;%10"/>
+                        <assign variable="karelerToplam&#305;" expression="binler^2 + y&#252;zler^2 + onlar^2 + birler^2"/>
+                        <output expression="&quot;binler= &quot;  &amp; binler  &amp; &quot;y&#252;zler= &quot;  &amp; y&#252;zler  &amp; &quot;onlar= &quot;  &amp; onlar  &amp; &quot;birler= &quot;   &amp; birler" newline="True"/>
+                        <output expression="&quot;KARELER TOPLKAMI = &quot; &amp; karelerToplam&#305;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot; pozitif ve D&#246;rt basamakl&#305; bir say&#305; giriniz!!&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="saya&#231;" expression="saya&#231; + 1"/>
+            </do>
+            <output expression="&quot;hakk&#305;n&#305;z bitti&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

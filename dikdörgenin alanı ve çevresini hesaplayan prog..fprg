@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="u&#287;ur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-18 11:47:34 "/>
+        <attribute name="created" value="dcSfdXI7S1VSQkFOOzIwMTktMTAtMTg7IjExOjQxOjE0ICI7MjI3NQ=="/>
+        <attribute name="edited" value="dcSfdXI7S1VSQkFOOzIwMTktMTAtMTg7IjExOjQ3OjM0ICI7MTsyMzkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k&#305;sakenar, uzunkenar, alan, &#231;evre" type="Integer" array="False" size=""/>
+            <output expression="&quot;k&#305;sa kenar&#305;n uzunlu&#287;unu giriniz&quot;" newline="True"/>
+            <input variable="k&#305;sakenar"/>
+            <output expression="&quot;uzun kenar uzunlu&#287;unu giriniz&quot;" newline="True"/>
+            <input variable="uzunkenar"/>
+            <assign variable="alan" expression="k&#305;sakenar*uzunkenar"/>
+            <assign variable="&#231;evre" expression="(k&#305;sakenar+uzunkenar)*2"/>
+            <output expression="&quot;Alan= &quot;&amp;alan" newline="True"/>
+            <output expression="&quot;&#199;evre= &quot;&amp;&#231;evre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

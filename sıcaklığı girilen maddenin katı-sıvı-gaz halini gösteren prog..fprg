@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="u&#287;ur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-18 11:52:20 "/>
+        <attribute name="created" value="dcSfdXI7S1VSQkFOOzIwMTktMTAtMTg7IjExOjQ4OjE2ICI7MjI4NA=="/>
+        <attribute name="edited" value="dcSfdXI7S1VSQkFOOzIwMTktMTAtMTg7IjExOjUyOjIwICI7MTsyMzgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s&#305;cakl&#305;k" type="Integer" array="False" size=""/>
+            <output expression="&quot;s&#305;cakl&#305;k derecesini giriniz&quot;" newline="True"/>
+            <input variable="s&#305;cakl&#305;k"/>
+            <if expression="s&#305;cakl&#305;k&lt;0">
+                <then>
+                    <output expression="&quot;KATI&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="s&#305;cakl&#305;k&gt;100">
+                        <then>
+                            <output expression="&quot;GAZ&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;SIVI&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

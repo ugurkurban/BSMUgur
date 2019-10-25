@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="u&#287;ur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 09:35:50 "/>
+        <attribute name="created" value="dcSfdXI7S1VSQkFOOzIwMTktMTAtMTU7IjA4OjQ3OjQwICI7MjI4Mw=="/>
+        <attribute name="edited" value="dcSfdXI7S1VSQkFOOzIwMTktMTAtMTU7IjA5OjM1OjUwICI7MTsyMzkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="girilen say&#305;lar&#305;n tek-&#231;ift oldu&#287;unu bulup kendi aralar&#305;nda toplayan prog.&#13;&#10;"/>
+            <declare name="sayi, tekToplam, ciftToplam" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="ciftToplam" expression="0"/>
+            <assign variable="tekToplam" expression="0"/>
+            <while expression="sayi&gt;=0">
+                <output expression="&quot;say&#305; giriniz&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi%2==0">
+                    <then>
+                        <output expression="&quot;girilen say&#305; &#231;ifttir.&quot;" newline="True"/>
+                        <assign variable="ciftToplam" expression="ciftToplam+sayi"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;girilen sayi tektir.&quot;" newline="True"/>
+                        <assign variable="tekToplam" expression="tekToplam+sayi"/>
+                    </else>
+                </if>
+                <output expression="&quot;tek say&#305;lar&#305;n toplam&#305;=&quot; &amp;tekToplam" newline="True"/>
+                <output expression="&quot;cift say&#305;lar&#305;n toplam&#305;=&quot; &amp;ciftToplam" newline="True"/>
+            </while>
+            <output expression="&quot;s&#305;f&#305;rdan k&#252;&#231;&#252;k say&#305; girdiniz mod al&#305;namaz&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
